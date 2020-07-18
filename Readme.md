@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Ракин](https://up.htmlacademy.ru/adaptive/20/user/1498411).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктория Коваленко`.
 
 ---
 
