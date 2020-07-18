@@ -1,8 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Ракин](https://up.htmlacademy.ru/adaptive/20/user/1498411).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
