@@ -1,3 +1,37 @@
+.user-photo {
+  background-color: white;
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.user-photo__post {
+  @media (min-width: @tablet-width) {
+    flex-basis: 50%;
+  }
+  @media (min-width: @desktop-width) {
+    flex-basis: 30%;
+  }
+}
+
+.user-photo__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.user-photo__post:first-child {
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+
 .user-photo__heading {
   font-style: normal;
   font-weight: normal;
