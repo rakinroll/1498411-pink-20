@@ -1,0 +1,79 @@
+.user-photo {
+  background-color: white;
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.user-photo__post {
+  @media (min-width: @tablet-width) {
+    flex-basis: 50%;
+  }
+  @media (min-width: @desktop-width) {
+    flex-basis: 30%;
+  }
+}
+
+.user-photo__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.user-photo__post:first-child {
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
+
+.user-photo__heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: white;
+}
+
+.user-photo__author-wrapper {
+  display: flex;
+}
+
+.user-photo__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+}
+
+.user-photo__time {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.user-photo__description {
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-photo__like-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}

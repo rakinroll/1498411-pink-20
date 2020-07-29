@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="#" alt="Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="../img/logo-pink-white-mobile.svg" alt="Pink">
+        </a>
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотография</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a>Html academy</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="photo.html">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -38,25 +39,31 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="#" alt="Pink">
+        <img src="../img/logo-pink-blue-mobile.svg" alt="Pink">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social__link page-footer__social-link--twitter" href="#">
+              <img class="page-footer__social-img" src="../img/icon-twitter.svg" alt="twitter">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+              <img class="page-footer__social__img" src="../img/icon-facebook.svg" alt="facebook">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Youtube</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+              <img class="page-footer__social-img" src="../img/icon-youtube.svg" alt="youtube">
+            </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__description">Разработано</p>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" alt="html academy">
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-description">Разработано</p>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="../img/logo-htmlacademy.svg" alt="html academy">
         </a>
       </div>
     </footer>

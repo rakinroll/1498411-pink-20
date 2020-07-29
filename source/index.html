@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="#" alt="Pink">
+      <a class="page-header__logo" href="index.html">
+        <img src="../img/logo-pink-white-mobile.svg" alt="Pink">
       </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотография</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a>Html academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="photo.html">Фотография</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__heading">
-        Взгляните на жизнь иначе
-      </h1>
-      <section class="download">
-        <a class="button button__download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a href="https://www.apple.com/ru/ios/app-store/">
-              <img src="#" alt="скачать для iphone">
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="https://play.google.com/store?hl=ru">
-              <img src="#" alt="скачать для android">
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-              <img src="#" alt="скачать для windows">
-            </a>
-          </li>
-        </ul>
-        <p class="download__description">Доступно для iphone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <section class="intro intro__wrapper">
+        <h1 class="intro__heading">
+          Взгляните на жизнь иначе!
+        </h1>
+        <article class="download">
+          <a class="download__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+          <ul class="download__list download__list-wrapper">
+            <li class="download__item">
+              <a href="https://www.apple.com/ru/ios/app-store/">
+                <img src="../img/logo-apple.svg" alt="скачать для iphone">
+              </a>
+            </li>
+            <li class="download__item">
+              <a href="https://play.google.com/store?hl=ru">
+                <img src="../img/logo-android.svg" alt="скачать для android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+                <img src="../img/logo-microsoft.svg" alt="скачать для windows">
+              </a>
+            </li>
+          </ul>
+          <p class="download__description">Доступно для iphone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </article>
       </section>
-      <section class="advantages">
+      <section class="advantages advantages__wrapper">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <h2 class="advantages__sentence">Устали от серости мегаполиса?</h2>
-        <h2 class="advantages__sentence">Нам есть, что вам предложить</h2>
+        <h2 class="advantages__sentence">Нам есть, что вам предложить!</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -81,6 +82,18 @@
           </li>
         </ul>
       </section>
+      <section class="informer">
+        <ul class="informer__list">
+          <li class="informer__item">
+            <h2 class="informer__heading">Эффект на 24 часа</h2>
+            <p class="informer__description">
+              Британские ученые провели исследовния и доказали,
+              что положительный эффект от использовния приложения длится целые сутки!
+            </p>
+            <a class="informer__most" href="#">Узнать больше об исследовании</a>
+          </li>
+        </ul>
+      </section>
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__wrapper slider">
@@ -91,6 +104,7 @@
                   Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                   А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
                 </p>
+                <p class="reviews__name-info">25 лет, водитель трамвая</p>
               </li>
             </ul>
             <p class="reviews__toggles slider__toggles">
@@ -103,25 +117,31 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="#" alt="Pink">
+        <img src="../img/logo-pink-blue-mobile.svg" alt="Pink">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
+      <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+              <img class="page-footer__social-img" src="../img/icon-twitter.svg" alt="twitter">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+              <img class="page-footer__social__img" src="../img/icon-facebook.svg" alt="facebook">
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Youtube</a>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+              <img class="page-footer__social-img" src="../img/icon-youtube.svg" alt="youtube">
+            </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__description">Разработано</p>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" alt="html academy">
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-description">Разработано</p>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="../img/logo-htmlacademy.svg" alt="html academy">
         </a>
       </div>
     </footer>
