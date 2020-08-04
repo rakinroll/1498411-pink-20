@@ -1,5 +1,17 @@
 .reviews {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
   color: black;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+  }
 }
 
 .reviews__item {
@@ -11,7 +23,6 @@
 
 .reviews__name {
   margin-top: 0;
-  padding: 0 20px;
   @media (min-width: @tablet-width) {
     order: 0;
   }
@@ -22,8 +33,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   @media (min-width: @tablet-width) {
     order: -1;
   }
@@ -33,10 +42,13 @@
   @media (max-width: @tablet-width) {
     display: none;
   }
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .reviews__toggles {
-  padding: 0 20px;
   @media (min-width: @desktop-width) {
     display: none;
   }

@@ -2,40 +2,49 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img src="../img/logo-pink-white-mobile.svg" alt="Pink">
-        </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="page-header__container-desktop">
+      <div class="page-header__container">
+        <div class="page-header__container-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="../img/logo-pink-white-mobile.svg" alt="Pink">
+          </a>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="photo.html">Фотография</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__item-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="photo.html">Фотография</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
+      <section class="intro">
+        <div class="intro__container">
+          <h1 class="intro__heading">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
+      </section>
     </header>
     <main class="page-main">
-      <h1 class="page-main__heading">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">

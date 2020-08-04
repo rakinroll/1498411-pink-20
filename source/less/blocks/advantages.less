@@ -1,22 +1,33 @@
 .advantages {
   color: black;
   @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    background: url(/img/iphone-screen-3-tablet@1x.png) bottom left no-repeat;
+  }
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: none;
   }
 }
 
-.advantages__wrapper {
-  @media (min-width: @desktop-width) {
-    padding: 0 130px;
-    width: 940px;
+.advantages__container-sentence {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    flex-basis: 100%;
   }
 }
 
 .advantages__sentence {
-  margin-top: 0;
-  padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
   @media (min-width: @tablet-width) {
@@ -25,12 +36,24 @@
 }
 
 .advantages__list {
+  @media (max-width: @tablet-width) {
+    width: 280px;
+    margin: 0 auto;
+  }
+  text-align: center;
   @media (min-width: @tablet-width) {
     flex-basis: 50%;
   }
   @media (min-width: @desktop-width) {
     display: flex;
     flex-basis: 100%;
+  }
+}
+
+.advantages__list-friends {
+  @media (min-width: @desktop-width) {
+    padding-top: 351px;
+    background: url(/img/iphone-screen-3-desktop@1x.png) no-repeat;
   }
 }
 
@@ -41,8 +64,28 @@
   }
 }
 
+.advantages__item--up {
+  @media (min-width: @desktop-width) {
+    padding-top: 351px;
+    background: url(/img/iphone-screen-1-desktop@1x.png) no-repeat;
+  }
+}
+
+.advantages__item--world {
+  @media (min-width: @desktop-width) {
+    padding-top: 351px;
+    background: url(/img/iphone-screen-2-desktop@1x.png) no-repeat;
+  }
+}
+
+.advantages__item--friends {
+  @media (min-width: @desktop-width) {
+    padding-top: 351px;
+    background: url(/img/iphone-screen-3-desktop@1x.png) no-repeat;
+  }
+}
+
 .advantages__title {
-  padding: 0 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -53,8 +96,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  padding: 0 20px;
-  margin-bottom: 0;
   @media (min-width: @tablet-width) {
     text-align: left;
   }

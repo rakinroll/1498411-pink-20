@@ -1,15 +1,22 @@
 .download {
+  width: 100%;
   background-color: #1d2631;
-  min-height: 271px;
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+.download__container {
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (min-width: @tablet-width) {
-    min-height: 232px;
-    width: 300px;
-    background: none;
-  }
 }
+
 
 .download__button {
   display: block;
