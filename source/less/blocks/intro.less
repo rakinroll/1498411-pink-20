@@ -1,9 +1,5 @@
 .intro {
   width: 100%;
-  min-height: 667px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     min-height: 619px;
@@ -12,10 +8,34 @@
   }
 }
 
+.intro__wrapper {
+  min-height: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
 .intro__container {
   width: 280px;
-  margin: 0 auto;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin: 0 auto;
+  }
 
   @media (min-width: @tablet-width) {
     width: 230px;
